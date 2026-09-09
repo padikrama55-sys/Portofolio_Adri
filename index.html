@@ -1,0 +1,337 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101211">
+  <meta
+    name="description"
+    content="Portofolio Adri Prasetyo — Graphic & Motion Designer. Branding, ilustrasi, tipografi, motion, packaging, dan visual event."
+  >
+
+  <title>Adri Prasetyo — Graphic & Motion Designer</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800;900&family=Poppins:wght@400;500;600&display=swap"
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+
+<body>
+  <a class="skip" href="#work" data-i18n="skip">
+    Langsung ke karya
+  </a>
+
+  <header>
+    <a class="brand" href="#home" aria-label="Adri Prasetyo home">
+      AP<span>®</span>
+    </a>
+
+    <nav aria-label="Main navigation">
+      <a href="#work" data-i18n="work">Karya</a>
+      <a href="#about" data-i18n="about">Tentang</a>
+      <a href="#contact" data-i18n="contact">Kontak</a>
+    </nav>
+
+    <div class="language" role="group" aria-label="Language">
+      <button type="button" data-lang="id" aria-pressed="true">ID</button>
+      <span>/</span>
+      <button type="button" data-lang="en" aria-pressed="false">EN</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero wrap" id="home">
+      <div class="hero-top">
+        <span>ADRI PRASETYO / PADIKRAMA</span>
+        <span>BANDUNG, INDONESIA</span>
+      </div>
+
+      <h1>
+        GRAPHIC
+        <span class="outline">& MOTION</span>
+        <span class="last-title">
+          DESIGNER
+          <span class="asterisk" aria-hidden="true">✳</span>
+        </span>
+      </h1>
+
+      <div class="hero-bottom">
+        <p data-i18n="intro">
+          Mengubah ide menjadi identitas, visual, dan cerita yang bermakna
+          bagi brand Anda.
+        </p>
+
+        <a class="button lime" href="#work">
+          <span data-i18n="explore">Jelajahi karya</span>
+          <span aria-hidden="true">↘</span>
+        </a>
+
+        <span class="experience">
+          <strong>10+</strong>
+          <span data-i18n="years">tahun pengalaman desain</span>
+        </span>
+      </div>
+
+      <div class="hero-art">
+        <img
+          src="assets/images/event-01.webp"
+          width="1600"
+          height="1131"
+          alt="Pesta Balap Rakyat — event visual design"
+        >
+        <a href="#work">
+          <span data-i18n="featured">
+            PILIHAN KARYA / VISUAL EVENT
+          </span>
+          <span aria-hidden="true">↗</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="wrap works" id="work">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow" data-i18n="selection">01 / PORTOFOLIO</p>
+          <h2 data-i18n="selected">Karya pilihan<span>.</span></h2>
+        </div>
+
+        <p data-i18n="workIntro">
+          Temukan pendekatan visual yang sesuai dengan kebutuhan proyek Anda.
+        </p>
+      </div>
+
+      <div class="work-tools">
+        <div
+          id="filters"
+          class="filters"
+          role="group"
+          aria-label="Portfolio categories"
+        ></div>
+
+        <label class="search">
+          <span aria-hidden="true">⌕</span>
+          <input
+            id="search"
+            type="search"
+            data-placeholder="search"
+            placeholder="Cari karya atau kategori…"
+            aria-label="Cari karya atau kategori"
+          >
+        </label>
+      </div>
+
+      <p
+        id="result-count"
+        class="result-count"
+        aria-live="polite"
+      ></p>
+
+      <div id="project-grid" class="project-grid"></div>
+
+      <div id="empty" hidden>
+        <p data-i18n="empty">
+          Karya tidak ditemukan. Coba kata kunci atau kategori lainnya.
+        </p>
+        <button class="button" id="reset" data-i18n="reset">
+          Tampilkan semua karya
+        </button>
+      </div>
+
+      <noscript>
+        Aktifkan JavaScript untuk filter dan galeri.
+        <a href="assets/pdf/main.pdf">Buka portofolio PDF</a>.
+      </noscript>
+    </section>
+
+    <section class="motion wrap" id="motion">
+      <div>
+        <p class="eyebrow">02 / MOTION GRAPHIC</p>
+
+        <h2 data-i18n="motionTitle">
+          Visual yang<br>
+          bergerak. Cerita<br>
+          yang terasa.
+        </h2>
+
+        <p data-i18n="motionDesc">
+          Motion graphic video lirik Iwan Fals ft. Ubay Nidji,
+          dalam portofolio Musica Studios.
+        </p>
+
+        <a
+          class="button lime"
+          href="https://www.youtube.com/watch?v=FcGYjMUH6ug"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <span data-i18n="watch">Tonton di YouTube</span>
+          ↗
+        </a>
+      </div>
+
+      <a
+        class="motion-image"
+        href="https://www.youtube.com/watch?v=FcGYjMUH6ug"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Watch Iwan Fals ft. Ubay Nidji on YouTube"
+      >
+        <img
+          src="assets/images/main-13.webp"
+          alt="Cuplikan desain motion video lirik Iwan Fals ft. Ubay Nidji"
+          loading="lazy"
+        >
+        <span class="play" aria-hidden="true">▶</span>
+      </a>
+    </section>
+
+    <section class="about wrap" id="about">
+      <div>
+        <p class="eyebrow" data-i18n="aboutLabel">03 / TENTANG SAYA</p>
+
+        <h2 data-i18n="aboutTitle">
+          Ide yang jelas.<br>
+          Eksekusi yang<br>
+          berkarakter.
+        </h2>
+
+        <a
+          class="text-link"
+          href="assets/pdf/cv.pdf"
+          target="_blank"
+          rel="noopener"
+          data-i18n="cv"
+        >
+          Lihat CV ↗
+        </a>
+      </div>
+
+      <div class="about-copy">
+        <p data-i18n="bio">
+          Saya Adri Prasetyo, Graphic & Motion Designer berbasis di Bandung
+          dengan pengalaman lebih dari 10 tahun. Saya menggabungkan desain
+          grafis, ilustrasi, dan gerak untuk membantu brand menyampaikan
+          pesan dengan jelas dan konsisten.
+        </p>
+
+        <p data-i18n="approach">
+          Setiap proyek dimulai dari memahami tujuan, audiens, dan konteks
+          penggunaannya. Dari identitas brand hingga visual event, saya
+          mengembangkan desain yang relevan dan siap diaplikasikan di
+          berbagai media.
+        </p>
+
+        <div class="career">
+          <span>2016–2026</span>
+          <div>
+            <strong>PT Tujusemesta Creative Studio</strong>
+            <p>Graphic, Motion & Experience Design</p>
+          </div>
+        </div>
+
+        <div class="career">
+          <span>2018–2020</span>
+          <div>
+            <strong>Musica Studio</strong>
+            <p data-i18n="musicRole">
+              Motion graphic & animasi video lirik
+            </p>
+          </div>
+        </div>
+
+        <div class="tools">
+          <span>Adobe Illustrator</span>
+          <span>Photoshop</span>
+          <span>After Effects</span>
+          <span>Premiere Pro</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="wrap">
+        <p class="eyebrow" data-i18n="contactLabel">
+          04 / MULAI PERCAKAPAN
+        </p>
+
+        <h2 data-i18n="contactTitle">
+          Punya ide?<br>
+          Mari wujudkan<span> bersama.</span>
+        </h2>
+
+        <div class="contact-bottom">
+          <p data-i18n="contactCopy">
+            Ceritakan kebutuhan, ruang lingkup, dan jadwal proyek Anda.
+            Mari temukan pendekatan visual yang tepat.
+          </p>
+
+          <a
+            class="button dark whatsapp"
+            href="https://wa.me/6287821534446"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span data-i18n="chat">Diskusikan via WhatsApp</span>
+            ↗
+          </a>
+        </div>
+
+        <a class="email" href="mailto:Padikrama55@gmail.com">
+          Padikrama55@gmail.com ↗
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="wrap">
+    <span>© <span id="year">2026</span> Adri Prasetyo</span>
+    <a href="#home" data-i18n="top">Kembali ke atas ↑</a>
+  </footer>
+
+  <dialog id="project-dialog" aria-labelledby="dialog-title">
+    <div class="dialog-top">
+      <span id="dialog-status"></span>
+
+      <button
+        id="close-dialog"
+        type="button"
+        aria-label="Tutup / Close"
+      >
+        ✕
+      </button>
+    </div>
+
+    <h2 id="dialog-title"></h2>
+    <p id="dialog-description"></p>
+
+    <div class="dialog-actions">
+      <a
+        id="project-pdf"
+        class="button lime"
+        target="_blank"
+        rel="noopener"
+        data-i18n="pdf"
+      >
+        Lihat PDF lengkap ↗
+      </a>
+
+      <a
+        class="button whatsapp"
+        target="_blank"
+        rel="noopener noreferrer"
+        data-i18n="similar"
+      >
+        Diskusikan proyek serupa ↗
+      </a>
+    </div>
+
+    <div id="gallery"></div>
+  </dialog>
+</body>
+</html>
