@@ -993,3 +993,77 @@ header .brand img {
     -webkit-text-stroke-width: 1px;
   }
 }
+/* JUDUL HERO: LIGHT / BOLD / LIGHT */
+.hero h1.hero-title {
+  font-family: "Montserrat", sans-serif;
+  font-size: clamp(2.5rem, 10.2vw, 9rem);
+  font-weight: 300;
+  font-style: normal;
+  font-synthesis: none;
+  line-height: 1.08;
+  letter-spacing: -0.045em;
+  color: #f3f4ee;
+  margin: 38px 0;
+
+  /* Hilangkan efek outline */
+  -webkit-text-stroke: 0;
+  -webkit-text-fill-color: currentColor;
+  text-shadow: none;
+}
+
+.hero-title .hero-line {
+  display: block;
+}
+
+.hero-title .hero-light {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+}
+
+.hero-title .hero-bold {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
+
+/* Pastikan seluruh teks memakai warna solid */
+.hero-title .hero-light,
+.hero-title .hero-bold {
+  color: #f3f4ee;
+  -webkit-text-stroke: 0;
+  -webkit-text-fill-color: currentColor;
+  text-shadow: none;
+}
+
+/* DESIGNER dan simbol hijau */
+.hero-title .hero-final {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.hero-title .asterisk {
+  flex-shrink: 0;
+  color: #c3fa64;
+  -webkit-text-stroke: 0;
+  -webkit-text-fill-color: currentColor;
+}
+
+/* Penyesuaian untuk HP */
+@media (max-width: 520px) {
+  .hero h1.hero-title {
+    font-size: clamp(2rem, 10.5vw, 3.5rem);
+    line-height: 1.12;
+    letter-spacing: -0.04em;
+    margin: 28px 0;
+  }
+
+  .hero-title .hero-final {
+    gap: 10px;
+  }
+
+  .hero-title .asterisk {
+    font-size: 0.8em;
+    margin-right: 0;
+  }
+}
